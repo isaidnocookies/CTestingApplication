@@ -5,6 +5,8 @@
 #ifndef CTESTINGAPPLICATION_SOMETHINGRANDOM_H
 #define CTESTINGAPPLICATION_SOMETHINGRANDOM_H
 
+#define TESTINGCONDITION
+
 int getRandomNumber(int min, int max);
 float getRandomFloat();
 

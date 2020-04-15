@@ -2,6 +2,15 @@
 #include "fileWithStructs.h"
 #include "somethingRandom.h"
 
+#ifndef TESTINGCONDITION
+#define TESTINGCONDITION
+
+int shouldntBeAvailableIfCompiled() {
+    return 0;
+}
+
+#endif
+
 int testingMethodFromMainFile() {
     return 42;
 }
