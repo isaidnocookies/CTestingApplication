@@ -12,7 +12,7 @@ int shouldntBeAvailableIfCompiled() {
 
 #endif
 
-typedef float FLOAT;
+//typedef float FLOAT;
 const FLOAT hereISAThing = 1.0F;
 
 FLOAT testingMethodWithWeirdReturn() {
