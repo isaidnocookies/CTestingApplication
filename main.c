@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include "fileWithStructs.h"
 #include "somethingRandom.h"
-#include "WTF"
 
 #ifndef TESTINGCONDITION
 #define TESTINGCONDITION
@@ -27,6 +26,12 @@ void* returnSomethingWeird() {
     return (void*)0;
 }
 
+int thePoorFunctionAtTheEnd(int value);
+
+/******************
+ * Main function
+ * It's here!
+ *****************/
 int main() {
     printf("Hello, World! : %d\n", testingMethodFromMainFile());
     struct point myPoint = getAPoint(4, 2);
@@ -40,4 +45,10 @@ int main() {
     }
 
     return 0;
+}
+
+int thePoorFunctionAtTheEnd(int value) {
+    int newValue = value / 2 + 1;
+    newValue = newValue + testingMethodFromMainFile();
+    return newValue;
 }
